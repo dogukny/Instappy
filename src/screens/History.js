@@ -127,7 +127,6 @@ class History extends React.Component {
     if (this.state.sonuc === 'ok') {
       return (
         <SafeAreaView style={{backgroundColor: colors.background, flex: 1}}>
-
           <FlatList
             contentContainerStyle={{
               alignSelf: 'flex-start',
@@ -169,14 +168,12 @@ class History extends React.Component {
                       height: imageWidth * 0.21,
                       borderRadius: imageWidth * 0.1,
                       borderWidth: 1,
-                      borderColor: colors.primary,
+                      borderColor: colors.text,
                     }}
                   />
                 </TouchableOpacity>
 
-                <Text style={{color: colors.primary}}>
-                  {item.id.substr(0, 9)}
-                </Text>
+                <Text style={{color: colors.text}}>{item.id.substr(0, 9)}</Text>
               </View>
             )}
           />

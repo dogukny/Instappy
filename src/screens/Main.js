@@ -137,7 +137,7 @@ class Main extends React.Component {
         />
         <View style={{paddingTop: 10}}>
           <Button icon="image-search" onPress={() => this.control()}>
-            Fotoğrafı Göster
+            {Strings.downloadbutton}
           </Button>
         </View>
       </View>
