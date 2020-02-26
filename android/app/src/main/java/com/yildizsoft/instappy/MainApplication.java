@@ -4,6 +4,7 @@ import androidx.multidex.MultiDexApplication;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.thebylito.navigationbarcolor.NavigationBarColorPackage;
 import io.expo.appearance.RNCAppearancePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;

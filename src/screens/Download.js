@@ -27,7 +27,6 @@ export default class Download extends React.Component {
     };
   }
   componentDidMount(prevProps, prevState) {
-
     this.setState(
       {
         pp: this.props.route.params?.pp,
@@ -73,11 +72,9 @@ export default class Download extends React.Component {
     })
       .fetch('GET', this.state.pp)
       .then(() => {
-        this.setState(
-          {
-            visible: true,
-          }
-        );
+        this.setState({
+          visible: true,
+        });
       })
       .catch(error => {
         this.setState({
@@ -108,7 +105,7 @@ export default class Download extends React.Component {
           />
 
           <Button
-            icon="download"
+            icon="arrow-down"
             onPress={() => {
               this._permissionCheck();
             }}>

@@ -18,6 +18,7 @@ import {
   Modal,
   Portal,
   ActivityIndicator,
+  IconButton,
 } from 'react-native-paper';
 import {PERMISSIONS, request} from 'react-native-permissions';
 import RNFetchBlob from 'rn-fetch-blob';
@@ -44,17 +45,17 @@ class History extends React.Component {
       headerTitle: name,
       headerRight: () => (
         <View style={{flexDirection: 'row'}}>
-          <Icon
+          <IconButton
             style={{paddingRight: 10}}
             onPress={this._retrieveItem}
-            name={'rotate-ccw'}
+            icon={'refresh'}
             size={24}
             color={this.props.theme.colors.text}
           />
-          <Icon
+          <IconButton
             style={{paddingRight: 10}}
             onPress={this._remover}
-            name={'trash'}
+            icon={'delete-outline'}
             size={24}
             color={this.props.theme.colors.text}
           />
@@ -193,7 +194,7 @@ class History extends React.Component {
                 />
                 <View style={{flexDirection: 'row'}}>
                   <Button
-                    icon="download"
+                    icon="arrow-down"
                     onPress={() => {
                       this._permissionCheck();
                     }}

@@ -131,8 +131,8 @@ android {
         applicationId "com.yildizsoft.instappy"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 21
-        versionName "feb24"
+        versionCode 22
+        versionName "feb26"
         multiDexEnabled true
     }
     splits {
@@ -162,7 +162,7 @@ android {
     }
     buildTypes {
         debug {
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
         }
 
         release {
@@ -190,6 +190,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-navigation-bar-color')
     implementation project(':react-native-appearance')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
