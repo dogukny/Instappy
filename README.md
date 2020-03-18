@@ -20,7 +20,7 @@ react-native run-android
 ## Screenshots
 Home Screen | Download Screen
 :-------------------------:|:-------------------------:
-![Home Screen](https://user-images.githubusercontent.com/35095902/62833101-bb226380-bc41-11e9-8df3-f173156e0cb8.png)  | ![Download Screen](https://user-images.githubusercontent.com/35095902/62833104-c4abcb80-bc41-11e9-8886-da18ed15feee.png) 
+![Home Screen](https://user-images.githubusercontent.com/35095902/76998853-cb808680-6966-11ea-94bf-3e7c24a62144.png)  | ![Download Screen](https://user-images.githubusercontent.com/35095902/76998857-ccb1b380-6966-11ea-9b18-6cdf16320a81.png) 
 
 History Screen | Modal Screen
 :-------------------------:|:-------------------------:

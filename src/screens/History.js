@@ -7,6 +7,7 @@ import {
   Alert,
   Dimensions,
   RefreshControl,
+  StatusBar,
 } from 'react-native';
 import React from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -124,10 +125,15 @@ class History extends React.Component {
     let dimensions = Dimensions.get('window');
     let imageWidth = dimensions.width;
     const {colors} = this.props.theme;
+    const scheme = this.props.theme.dark;
 
     if (this.state.sonuc === 'ok') {
       return (
         <SafeAreaView style={{backgroundColor: colors.background, flex: 1}}>
+          <StatusBar
+            barStyle={scheme === true ? 'light-content' : 'dark-content'}
+            backgroundColor={scheme === true ? colors.background : 'white'}
+          />
           <FlatList
             contentContainerStyle={{
               alignSelf: 'flex-start',
