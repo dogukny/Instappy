@@ -13,7 +13,7 @@ cd Instappy
 # Install dependencies
 yarn install 
 # Start app on connected android device
-react-native run-android
+yarn run android
 ```
 
 
